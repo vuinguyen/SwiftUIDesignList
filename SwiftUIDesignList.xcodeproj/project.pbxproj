@@ -14,6 +14,9 @@
 		521E76D02995DC660019F55A /* SwiftUIDesignListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E76CF2995DC660019F55A /* SwiftUIDesignListTests.swift */; };
 		521E76DA2995DC660019F55A /* SwiftUIDesignListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E76D92995DC660019F55A /* SwiftUIDesignListUITests.swift */; };
 		521E76DC2995DC660019F55A /* SwiftUIDesignListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E76DB2995DC660019F55A /* SwiftUIDesignListUITestsLaunchTests.swift */; };
+		521E76E92996BA010019F55A /* TextDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E76E82996BA010019F55A /* TextDetail.swift */; };
+		521E76EB2996BAAC0019F55A /* ShapeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E76EA2996BAAC0019F55A /* ShapeDetail.swift */; };
+		521E76ED2996BABF0019F55A /* ImageDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E76EC2996BABF0019F55A /* ImageDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		521E76D52995DC660019F55A /* SwiftUIDesignListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIDesignListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		521E76D92995DC660019F55A /* SwiftUIDesignListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDesignListUITests.swift; sourceTree = "<group>"; };
 		521E76DB2995DC660019F55A /* SwiftUIDesignListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDesignListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		521E76E82996BA010019F55A /* TextDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDetail.swift; sourceTree = "<group>"; };
+		521E76EA2996BAAC0019F55A /* ShapeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeDetail.swift; sourceTree = "<group>"; };
+		521E76EC2996BABF0019F55A /* ImageDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,9 @@
 				521E76C02995DC640019F55A /* ContentView.swift */,
 				521E76C22995DC650019F55A /* Assets.xcassets */,
 				521E76C42995DC650019F55A /* Preview Content */,
+				521E76E82996BA010019F55A /* TextDetail.swift */,
+				521E76EA2996BAAC0019F55A /* ShapeDetail.swift */,
+				521E76EC2996BABF0019F55A /* ImageDetail.swift */,
 			);
 			path = SwiftUIDesignList;
 			sourceTree = "<group>";
@@ -257,8 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521E76EB2996BAAC0019F55A /* ShapeDetail.swift in Sources */,
 				521E76C12995DC640019F55A /* ContentView.swift in Sources */,
+				521E76E92996BA010019F55A /* TextDetail.swift in Sources */,
 				521E76BF2995DC640019F55A /* SwiftUIDesignListApp.swift in Sources */,
+				521E76ED2996BABF0019F55A /* ImageDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
