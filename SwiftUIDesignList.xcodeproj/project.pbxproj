@@ -50,6 +50,7 @@
 		521E76E82996BA010019F55A /* TextDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDetail.swift; sourceTree = "<group>"; };
 		521E76EA2996BAAC0019F55A /* ShapeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeDetail.swift; sourceTree = "<group>"; };
 		521E76EC2996BABF0019F55A /* ImageDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetail.swift; sourceTree = "<group>"; };
+		52556108299D9F6A0032C84A /* SunfishDesign */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SunfishDesign; path = SwiftUIDesignList/LocalPackages/SunfishDesign; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +81,7 @@
 		521E76B22995DC640019F55A = {
 			isa = PBXGroup;
 			children = (
+				52556108299D9F6A0032C84A /* SunfishDesign */,
 				521E76BD2995DC640019F55A /* SwiftUIDesignList */,
 				521E76CE2995DC660019F55A /* SwiftUIDesignListTests */,
 				521E76D82995DC660019F55A /* SwiftUIDesignListUITests */,
