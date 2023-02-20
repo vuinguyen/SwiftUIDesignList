@@ -8,9 +8,9 @@
 import SwiftUI
 
 public enum SunfishColor: String, CaseIterable {
-    case blue
-    case brown
-    case pink
-    case teal
-    case yellow
+    case sunfishBlue
+    case sunfishBrown
+    case sunfishPink
+    case sunfishTeal
+    case sunfishYellow
 }

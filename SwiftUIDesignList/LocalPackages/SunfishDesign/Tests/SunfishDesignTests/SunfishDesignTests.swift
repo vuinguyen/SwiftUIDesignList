@@ -11,7 +11,7 @@ final class SunfishDesignTests: XCTestCase {
     }
 
     func testSunfishColorFromBundle() {
-        let color = Color(SunfishColor.brown)
+        let color = Color(.sunfishBrown)
         XCTAssertNotNil(color)
     }
 }
