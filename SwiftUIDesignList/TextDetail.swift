@@ -6,11 +6,24 @@
 //
 
 import SwiftUI
+import SunfishDesign
 
 struct TextDetail: View {
     var body: some View {
-        Text("Text Detail!")
-            .foregroundColor(.cyan)
+        VStack {
+            Text("Apple's brown")
+                .foregroundColor(.brown)
+                .padding([.top], 60)
+            Text("Sunfish's brown")
+                .foregroundColor(.sunfishBrown)
+            Divider()
+            Text("Apple's yellow")
+                .foregroundColor(.yellow)
+            Text("Sunfish's yellow")
+                .foregroundColor(.sunfishYellow)
+            Spacer()
+        }
+
     }
 }
 

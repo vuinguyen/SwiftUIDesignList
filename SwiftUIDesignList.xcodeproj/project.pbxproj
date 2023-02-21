@@ -17,6 +17,7 @@
 		521E76E92996BA010019F55A /* TextDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E76E82996BA010019F55A /* TextDetail.swift */; };
 		521E76EB2996BAAC0019F55A /* ShapeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E76EA2996BAAC0019F55A /* ShapeDetail.swift */; };
 		521E76ED2996BABF0019F55A /* ImageDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E76EC2996BABF0019F55A /* ImageDetail.swift */; };
+		52E40A9029A4357D0017E50B /* SunfishDesign in Frameworks */ = {isa = PBXBuildFile; productRef = 52E40A8F29A4357D0017E50B /* SunfishDesign */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52E40A9029A4357D0017E50B /* SunfishDesign in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +88,7 @@
 				521E76CE2995DC660019F55A /* SwiftUIDesignListTests */,
 				521E76D82995DC660019F55A /* SwiftUIDesignListUITests */,
 				521E76BC2995DC640019F55A /* Products */,
+				52E40A8E29A4357D0017E50B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +141,13 @@
 			path = SwiftUIDesignListUITests;
 			sourceTree = "<group>";
 		};
+		52E40A8E29A4357D0017E50B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,6 +164,9 @@
 			dependencies = (
 			);
 			name = SwiftUIDesignList;
+			packageProductDependencies = (
+				52E40A8F29A4357D0017E50B /* SunfishDesign */,
+			);
 			productName = SwiftUIDesignList;
 			productReference = 521E76BB2995DC640019F55A /* SwiftUIDesignList.app */;
 			productType = "com.apple.product-type.application";
@@ -597,6 +610,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52E40A8F29A4357D0017E50B /* SunfishDesign */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SunfishDesign;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 521E76B32995DC640019F55A /* Project object */;
 }
