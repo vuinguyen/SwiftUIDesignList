@@ -10,8 +10,12 @@ final class SunfishDesignTests: XCTestCase {
         XCTAssertEqual(SunfishDesign().text, "Hello, World!")
     }
 
-    func testSunfishColorFromBundle() {
-        let color = Color(.sunfishBrown)
-        XCTAssertNotNil(color)
+    // test that all colors from the Assets file can be found and
+    // create non-nil Colors
+    func testSunfishColorsFromBundle() {
+        for sunfishColor in SunfishColor.allCases {
+            let color = Color(sunfishColor)
+            XCTAssertNotNil(color)
+        }
     }
 }
