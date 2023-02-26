@@ -10,10 +10,12 @@ import SwiftUI
 struct DesignTestView: View {
     var body: some View {
         VStack {
-            Text("Apple's brown")
+            Text("Apple's brown and semibold font")
                 .foregroundColor(.brown)
-            Text("Sunfish's brown")
+                .font(.system(size: 20.0, weight: .semibold))
+            Text("Sunfish's brown and semibold font")
                 .foregroundColor(.sunfishBrown)
+                .font(.sunfish(size: 20.0, weight: .semibold))
             Text("Apple's yellow")
                 .foregroundColor(.yellow)
             Text("Sunfish's yellow")

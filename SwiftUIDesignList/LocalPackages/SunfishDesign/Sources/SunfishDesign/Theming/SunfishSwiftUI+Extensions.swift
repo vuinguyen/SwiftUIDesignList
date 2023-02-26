@@ -30,3 +30,37 @@ extension View {
         self.modifier(ForegroundColorModifier(color: color))
     }
 }
+
+// MARK: Font View Modifiers
+
+// Load all fonts before we can use them
+extension Font {
+    public static func loadFonts() {
+        SunfishFontName.allCases
+            .map { Bundle.designBundle.url(forResource: Optional($0.rawValue), withExtension: "ttf") }
+            .compactMap { $0 }
+            .forEach { CTFontManagerRegisterFontsForURL($0 as CFURL, .process, nil) }
+    }
+
+    static func custom(_ font: SunfishFont, size: CGFloat) -> Font {
+        Font.loadFonts()
+        return Font.custom(font.name, size: size)
+    }
+}
+
+// custom view modifier to add custom font
+struct FontModifier: ViewModifier {
+    let font: SunfishFont
+
+    func body(content: Content) -> some View {
+        return content.font(Font.custom(font, size: font.size))
+    }
+}
+
+// view extension that will take in custom view modifer to add custom font
+extension View {
+    public func font(_ font: SunfishFont) -> some View {
+        self.modifier(FontModifier(font: font))
+    }
+}
+
