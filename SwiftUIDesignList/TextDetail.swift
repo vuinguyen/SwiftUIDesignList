@@ -10,21 +10,30 @@ import SunfishDesign
 
 struct TextDetail: View {
     var body: some View {
+        let fontSize = 30.0
+
         VStack {
-            Text("Apple's brown / semibold font")
-                .foregroundColor(.brown)
-                .font(.system(size: 25.0, weight: .semibold))
-                .padding([.top], 60)
-            Text("Sunfish's brown / semibold font")
-                .foregroundColor(.sunfishBrown)
-                .font(.sunfish(size: 25.0, weight: .semibold))
-            Divider()
-            Text("Apple's yellow color / thin font")
+            Text("Apple's yellow / light font")
                 .foregroundColor(.yellow)
-                .font(.system(size: 25.0, weight: .thin))
-            Text("Sunfish's yellow color / thin font")
+                .font(.system(size: fontSize, weight: .light))
+                .padding([.top], 60)
+            Text("Sunfish's yellow / light font")
                 .foregroundColor(.sunfishYellow)
-                .font(.sunfish(size: 25.0, weight: .thin))
+                .font(.sunfish(size: fontSize, weight: .light))
+            Divider()
+            Text("Apple's teal / regular font")
+                .foregroundColor(.teal)
+                .font(.system(size: fontSize, weight: .regular))
+            Text("Sunfish's teal / regular font")
+                .foregroundColor(.sunfishTeal)
+                .font(.sunfish(size: fontSize, weight: .regular))
+            Divider()
+            Text("Apple's brown / bold font")
+                .foregroundColor(.brown)
+                .font(.system(size: fontSize, weight: .bold))
+            Text("Sunfish's brown / bold font")
+                .foregroundColor(.sunfishBrown)
+                .font(.sunfish(size: fontSize, weight: .bold))
             Spacer()
         }
 
