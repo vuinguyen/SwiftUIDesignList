@@ -29,3 +29,7 @@ xcshareddate/
 *.dSYM.zip
 *.dSYM
 .DS_Store
+
+# ignore scheme management or else it gets annoying when you're
+# swapping between schemes
+SwiftUIDesignList.xcodeproj/xcuserdata/*.xcuserdatad/xcschemes/xcschememanagement.plist
