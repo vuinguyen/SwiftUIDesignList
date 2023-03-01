@@ -12,7 +12,7 @@ import SwiftUI
 // simplify initializing of Color with enum
 extension Color {
     public init(_ color: SunfishColor) {
-        self.init(color.rawValue, bundle: .designBundle)
+        self.init(color.rawValue, bundle: .module)
     }
 }
 
@@ -37,7 +37,7 @@ extension View {
 extension Font {
     public static func loadFonts() {
         SunfishFontName.allCases
-            .map { Bundle.designBundle.url(forResource: Optional($0.rawValue), withExtension: "ttf") }
+            .map { Bundle.module.url(forResource: Optional($0.rawValue), withExtension: "ttf") }
             .compactMap { $0 }
             .forEach { CTFontManagerRegisterFontsForURL($0 as CFURL, .process, nil) }
     }
