@@ -31,6 +31,26 @@ extension View {
     }
 }
 
+// Custom view modifier to add background color
+struct BackgroundColorModifer: ViewModifier {
+    let color: SunfishColor
+
+    func body(content: Content) -> some View {
+        content.background(Color(color.rawValue, bundle: .module))
+    }
+}
+
+// View extension that will take in custom view modifier for foreground color
+extension View {
+    /// Use this modifier to fill in a  background with a SunfishColor
+    /// Sample Usage:
+    /// Text("Hello, World!")
+    ///    .background(.sunfishBlue)
+    public func background(_ color: SunfishColor) -> some View {
+        self.modifier(BackgroundColorModifer(color: color))
+    }
+}
+
 // MARK: Font View Modifiers
 
 // Load all fonts before we can use them
