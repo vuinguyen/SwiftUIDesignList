@@ -9,14 +9,14 @@ import SwiftUI
 
 // MARK: Color View Modifiers
 
-// simplify initializing of Color with enum
+// Simplify initializing of Color with enum
 extension Color {
     public init(_ color: SunfishColor) {
         self.init(color.rawValue, bundle: .module)
     }
 }
 
-// custom view modifier to add foreground color
+// Custom view modifier to add foreground color
 struct ForegroundColorModifier: ViewModifier {
     let color: SunfishColor
     func body(content: Content) -> some View {
@@ -24,8 +24,12 @@ struct ForegroundColorModifier: ViewModifier {
     }
 }
 
-// view extension that will take in custom view modifier for foreground color
+// View extension that will take in custom view modifier for foreground color
 extension View {
+    /// Use this modifier to fill in a foreground with a SunfishColor
+    /// Sample Usage:
+    /// Text("Hello, World!")
+    ///    .foregroundColor(.sunfishPink)
     public func foregroundColor(_ color: SunfishColor) -> some View {
         self.modifier(ForegroundColorModifier(color: color))
     }
@@ -68,7 +72,7 @@ extension Font {
     }
 }
 
-// custom view modifier to add custom font
+// Custom view modifier to add custom font
 struct FontModifier: ViewModifier {
     let font: SunfishFont
 
@@ -77,8 +81,12 @@ struct FontModifier: ViewModifier {
     }
 }
 
-// view extension that will take in custom view modifer to add custom font
+// View extension that will take in custom view modifer to add custom font
 extension View {
+    /// Use this modifier to select a type of SunfishFont
+    /// Sample Usage:
+    /// Text("Hello, World!")
+    ///     .font(.sunfish(size: 30.0, weight: .regular))
     public func font(_ font: SunfishFont) -> some View {
         self.modifier(FontModifier(font: font))
     }
