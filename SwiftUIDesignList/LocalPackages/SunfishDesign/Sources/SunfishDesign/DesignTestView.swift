@@ -22,6 +22,12 @@ struct DesignTestView: View {
             Text("Sunfish's yellow / light font")
                 .foregroundColor(.sunfishYellow)
                 .font(.sunfish(size: 25.0, weight: .light))
+            Text("Apple's regular font / blue background")
+                .font(.system(size: 20.0, weight: .regular))
+                .background(.blue)
+            Text("Sunfish's regular font / blue background")
+                .font(.sunfish(size: 20.0, weight: .regular))
+                .background(.sunfishBlue)
         }
     }
 }
