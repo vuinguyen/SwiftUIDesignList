@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DesignTestView: View {
+struct TextTestView: View {
     var body: some View {
         VStack {
             Text("Apple's brown / bold font")
@@ -34,6 +34,6 @@ struct DesignTestView: View {
 
 struct DesignTestView_Previews: PreviewProvider {
     static var previews: some View {
-        DesignTestView()
+        TextTestView()
     }
 }

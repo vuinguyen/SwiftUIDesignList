@@ -1,14 +1,13 @@
 //
-//  ShapeDetail.swift
-//  SwiftUIDesignList
+//  SwiftUIView.swift
+//  
 //
-//  Created by Vui Nguyen on 2/10/23.
+//  Created by Vui Nguyen on 3/3/23.
 //
 
 import SwiftUI
-import SunfishDesign
 
-struct ShapeDetail: View {
+struct ShapeTestView: View {
     var body: some View {
         VStack {
             Rectangle()
@@ -22,8 +21,8 @@ struct ShapeDetail: View {
     }
 }
 
-struct ShapeDetail_Previews: PreviewProvider {
+struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        ShapeDetail()
+        ShapeTestView()
     }
 }
