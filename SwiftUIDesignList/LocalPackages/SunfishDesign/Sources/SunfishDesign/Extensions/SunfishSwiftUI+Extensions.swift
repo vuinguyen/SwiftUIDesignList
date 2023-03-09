@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// MARK: Color View Modifiers
+// MARK: Color Extension
 
 // Simplify initializing of Color with enum
 extension Color {
@@ -33,7 +33,7 @@ extension Font {
     }
 }
 
-// Custom view modifier to add custom font
+// Custom View Modifier to add custom font
 struct FontModifier: ViewModifier {
     let font: SunfishFont
 
@@ -42,7 +42,7 @@ struct FontModifier: ViewModifier {
     }
 }
 
-// View extension that will take in custom view modifer to add custom font
+// View extension that will take in custom View Modifer to add custom font
 extension View {
     /// Use this modifier to select a type of SunfishFont
     /// Sample Usage:
