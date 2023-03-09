@@ -9,7 +9,15 @@ import SwiftUI
 
 struct ShapeTestView: View {
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            Rectangle()
+                .fill(.sunfishTeal)
+            Circle()
+                .fill(.sunfishPink, strokeBorder: .sunfishBrown, lineWidth: 10.0)
+            Ellipse()
+                .stroke(.sunfishBlue, lineWidth: 5.0)
+                .background(.sunfishYellow)
+        }
     }
 }
 

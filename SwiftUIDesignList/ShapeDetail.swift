@@ -6,11 +6,19 @@
 //
 
 import SwiftUI
+import SunfishDesign
 
 struct ShapeDetail: View {
     var body: some View {
-        Text("Shape Detail!")
-            .foregroundColor(.brown)
+        VStack {
+            Rectangle()
+                .fill(.sunfishTeal)
+            Circle()
+                .fill(.sunfishPink, strokeBorder: .sunfishBrown, lineWidth: 10.0)
+            Ellipse()
+                .stroke(.sunfishBlue, lineWidth: 5.0)
+                .background(.sunfishYellow)
+        }
     }
 }
 
