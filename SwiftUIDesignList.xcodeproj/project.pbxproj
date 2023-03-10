@@ -16,7 +16,6 @@
 		521E76DC2995DC660019F55A /* SwiftUIDesignListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E76DB2995DC660019F55A /* SwiftUIDesignListUITestsLaunchTests.swift */; };
 		521E76E92996BA010019F55A /* TextForegroundColorDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E76E82996BA010019F55A /* TextForegroundColorDetail.swift */; };
 		521E76EB2996BAAC0019F55A /* ShapeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E76EA2996BAAC0019F55A /* ShapeDetail.swift */; };
-		521E76ED2996BABF0019F55A /* ImageDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E76EC2996BABF0019F55A /* ImageDetail.swift */; };
 		52E40A9029A4357D0017E50B /* SunfishDesign in Frameworks */ = {isa = PBXBuildFile; productRef = 52E40A8F29A4357D0017E50B /* SunfishDesign */; };
 		52FA4EF929B0179F003F54B1 /* TextBackgroundColorDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA4EF829B0179F003F54B1 /* TextBackgroundColorDetail.swift */; };
 /* End PBXBuildFile section */
@@ -51,7 +50,6 @@
 		521E76DB2995DC660019F55A /* SwiftUIDesignListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDesignListUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		521E76E82996BA010019F55A /* TextForegroundColorDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextForegroundColorDetail.swift; sourceTree = "<group>"; };
 		521E76EA2996BAAC0019F55A /* ShapeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeDetail.swift; sourceTree = "<group>"; };
-		521E76EC2996BABF0019F55A /* ImageDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetail.swift; sourceTree = "<group>"; };
 		52556108299D9F6A0032C84A /* SunfishDesign */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SunfishDesign; path = SwiftUIDesignList/LocalPackages/SunfishDesign; sourceTree = "<group>"; };
 		52FA4EF829B0179F003F54B1 /* TextBackgroundColorDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBackgroundColorDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,7 +112,6 @@
 				521E76E82996BA010019F55A /* TextForegroundColorDetail.swift */,
 				52FA4EF829B0179F003F54B1 /* TextBackgroundColorDetail.swift */,
 				521E76EA2996BAAC0019F55A /* ShapeDetail.swift */,
-				521E76EC2996BABF0019F55A /* ImageDetail.swift */,
 			);
 			path = SwiftUIDesignList;
 			sourceTree = "<group>";
@@ -288,7 +285,6 @@
 				521E76C12995DC640019F55A /* ContentView.swift in Sources */,
 				521E76E92996BA010019F55A /* TextForegroundColorDetail.swift in Sources */,
 				521E76BF2995DC640019F55A /* SwiftUIDesignListApp.swift in Sources */,
-				521E76ED2996BABF0019F55A /* ImageDetail.swift in Sources */,
 				52FA4EF929B0179F003F54B1 /* TextBackgroundColorDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

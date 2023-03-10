@@ -14,7 +14,6 @@ struct ContentView: View {
                 NavigationLink("Text & Foreground Color", destination: TextForegroundColorDetail())
                 NavigationLink("Text & Background Color", destination: TextBackgroundColorDetail())
                 NavigationLink("Shapes", destination: ShapeDetail())
-                NavigationLink("Images", destination: ImageDetail())
             }
             .navigationTitle("SwiftUI Components")
         }
