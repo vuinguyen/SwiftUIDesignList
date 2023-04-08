@@ -14,10 +14,17 @@ struct TextForegroundColorDetail: View {
     var body: some View {
         VStack {
             Group {
+                Text("Apple's regular font")
+                    .font(.system(size: fontSize, weight: .regular))
+                    .padding([.top], 60)
+                Text("Sunfish's regular font")
+                    .font(.sunfish(size: fontSize, weight: .regular))
+            }
+            Divider()
+            Group {
                 Text("Apple's yellow / light font")
                     .foregroundColor(.yellow)
                     .font(.system(size: fontSize, weight: .light))
-                    .padding([.top], 60)
                 Text("Sunfish's yellow / light font")
                     .foregroundColor(.sunfishYellow)
                     .font(.sunfish(size: fontSize, weight: .light))
