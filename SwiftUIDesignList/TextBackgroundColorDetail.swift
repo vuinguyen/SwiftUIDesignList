@@ -18,6 +18,7 @@ struct TextBackgroundColorDetail: View {
                     .font(.system(size: fontSize, weight: .regular))
                     .background(.pink)
                     .padding([.top], 60)
+                Divider()
                 Text("Sunfish's regular font / pink background")
                     .font(.sunfish(size: fontSize, weight: .regular))
                     .background(.sunfishPink)
