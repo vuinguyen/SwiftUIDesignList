@@ -73,6 +73,23 @@ extension Shape {
     }
 }
 
+// MARK: InsettableShape Extension
+/// Use this modifier to fill in an InsettableShape with a ShapeStyle that could be a SunfishColor,
+/// and add a stroke border around that InsettableShape, with a ShapeStyle that could be a SunfishColor
+/// Sample Usage:
+/// Circle()
+///     .fill(.sunfishPink, strokeBorder: .sunfishBrown, lineWidth: 10.0)
+///
+/// Reference:
+/// https://www.hackingwithswift.com/quick-start/swiftui/how-to-fill-and-stroke-shapes-at-the-same-time
+extension InsettableShape {
+    func fill<Fill: ShapeStyle, Stroke: ShapeStyle>(_ fillStyle: Fill, strokeBorder strokeStyle: Stroke, lineWidth: Double = 1) -> some View {
+        self
+            .strokeBorder(strokeStyle, lineWidth: lineWidth)
+            .background(self.fill(fillStyle))
+    }
+}
+
 // MARK: ShapeStyle Extension
 
 /// Extend ShapeStyle so that View Modifiers that take a ShapeStyle,
