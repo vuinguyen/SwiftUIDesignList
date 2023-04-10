@@ -16,7 +16,7 @@ struct ShapeDetail: View {
             Circle()
                 .fill(.sunfishPink, strokeBorder: .sunfishBrown, lineWidth: 10.0)
             Ellipse()
-                .stroke(.sunfishBlue, lineWidth: 5.0)
+                .strokeBorder(.sunfishBlue, lineWidth: 5.0)
                 .background(.sunfishYellow)
         }
     }
