@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		521E76BF2995DC640019F55A /* SwiftUIDesignListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E76BE2995DC640019F55A /* SwiftUIDesignListApp.swift */; };
-		521E76C12995DC640019F55A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E76C02995DC640019F55A /* ContentView.swift */; };
+		521E76C12995DC640019F55A /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E76C02995DC640019F55A /* MainListView.swift */; };
 		521E76C32995DC650019F55A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521E76C22995DC650019F55A /* Assets.xcassets */; };
 		521E76C62995DC650019F55A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521E76C52995DC650019F55A /* Preview Assets.xcassets */; };
 		521E76D02995DC660019F55A /* SwiftUIDesignListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E76CF2995DC660019F55A /* SwiftUIDesignListTests.swift */; };
@@ -40,7 +40,7 @@
 /* Begin PBXFileReference section */
 		521E76BB2995DC640019F55A /* SwiftUIDesignList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDesignList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		521E76BE2995DC640019F55A /* SwiftUIDesignListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDesignListApp.swift; sourceTree = "<group>"; };
-		521E76C02995DC640019F55A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		521E76C02995DC640019F55A /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 		521E76C22995DC650019F55A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		521E76C52995DC650019F55A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		521E76CB2995DC660019F55A /* SwiftUIDesignListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIDesignListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,13 +105,10 @@
 		521E76BD2995DC640019F55A /* SwiftUIDesignList */ = {
 			isa = PBXGroup;
 			children = (
+				52FE6E5529E5F59800BDA30B /* Views */,
 				521E76BE2995DC640019F55A /* SwiftUIDesignListApp.swift */,
-				521E76C02995DC640019F55A /* ContentView.swift */,
 				521E76C22995DC650019F55A /* Assets.xcassets */,
 				521E76C42995DC650019F55A /* Preview Content */,
-				521E76E82996BA010019F55A /* TextForegroundColorDetail.swift */,
-				52FA4EF829B0179F003F54B1 /* TextBackgroundColorDetail.swift */,
-				521E76EA2996BAAC0019F55A /* ShapeDetail.swift */,
 			);
 			path = SwiftUIDesignList;
 			sourceTree = "<group>";
@@ -146,6 +143,17 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52FE6E5529E5F59800BDA30B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				521E76C02995DC640019F55A /* MainListView.swift */,
+				521E76E82996BA010019F55A /* TextForegroundColorDetail.swift */,
+				52FA4EF829B0179F003F54B1 /* TextBackgroundColorDetail.swift */,
+				521E76EA2996BAAC0019F55A /* ShapeDetail.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,7 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				521E76EB2996BAAC0019F55A /* ShapeDetail.swift in Sources */,
-				521E76C12995DC640019F55A /* ContentView.swift in Sources */,
+				521E76C12995DC640019F55A /* MainListView.swift in Sources */,
 				521E76E92996BA010019F55A /* TextForegroundColorDetail.swift in Sources */,
 				521E76BF2995DC640019F55A /* SwiftUIDesignListApp.swift in Sources */,
 				52FA4EF929B0179F003F54B1 /* TextBackgroundColorDetail.swift in Sources */,
