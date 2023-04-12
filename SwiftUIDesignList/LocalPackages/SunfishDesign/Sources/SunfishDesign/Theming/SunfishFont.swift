@@ -43,20 +43,6 @@ public enum SunfishFont {
             return size
         }
     }
-
-    var weight: Font.Weight {
-        switch self {
-        case .sunfish(_, let weight):
-            switch weight {
-            case SunfishFontWeight.bold:
-                return Font.Weight.bold
-            case SunfishFontWeight.light:
-                return Font.Weight.light
-            case SunfishFontWeight.regular:
-                return Font.Weight.regular
-            }
-        }
-    }
 }
 
 
