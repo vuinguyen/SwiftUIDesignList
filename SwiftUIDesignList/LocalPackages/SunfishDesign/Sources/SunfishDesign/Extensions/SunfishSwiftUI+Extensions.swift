@@ -16,7 +16,7 @@ extension Color {
     }
 }
 
-// MARK: Font View Modifiers
+// MARK: Font Extension
 
 // Load all fonts before we can use them
 extension Font {
@@ -27,26 +27,42 @@ extension Font {
             .forEach { CTFontManagerRegisterFontsForURL($0 as CFURL, .process, nil) }
     }
 
+    // this is our own, overloaded implementation of the Font.custom() function
+    // that takes a SunfishFont as a parameter
     static func custom(_ font: SunfishFont, size: CGFloat) -> Font {
+        // load fonts before they can be used
         Font.loadFonts()
+        // call Apple's Font.custom() function
+        // to use the custom font
+        // https://developer.apple.com/documentation/swiftui/font/custom(_:size:)
         return Font
             .custom(font.name, size: size)
     }
 }
 
-// Custom View Modifier to add custom font
+// MARK: ViewModifier
+
+// Custom View Modifier that takes in a custom font
 struct FontModifier: ViewModifier {
     let font: SunfishFont
 
     func body(content: Content) -> some View {
+        // Calling our overloaded implementation of the Font.custom() function
+        // which takes a SunfishFont
         content
             .font(Font.custom(font, size: font.size))
     }
 }
 
-// View extension that will take in custom View Modifer to add custom font
+// MARK: View Extension
+
+// Extend View with a function that takes in a custom View Modifer
+// This custom View Modifier will add a custom font
+// of type SunfishFont, to the View
+// syntax of calling this function looks similar to:
+// https://developer.apple.com/documentation/swiftui/font/system(size:weight:design:)-697b2
 extension View {
-    /// Use this modifier to select a type of SunfishFont
+    /// Apply a font of type SunfishFont to the View
     /// Sample Usage:
     /// Text("Hello, World!")
     ///     .font(.sunfish(size: 30.0, weight: .regular))
