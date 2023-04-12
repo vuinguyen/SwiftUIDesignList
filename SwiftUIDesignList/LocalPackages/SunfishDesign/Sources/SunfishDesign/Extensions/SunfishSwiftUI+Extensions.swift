@@ -29,7 +29,8 @@ extension Font {
 
     static func custom(_ font: SunfishFont, size: CGFloat) -> Font {
         Font.loadFonts()
-        return Font.custom(font.name, size: size)
+        return Font
+            .custom(font.name, size: size)
     }
 }
 
@@ -38,7 +39,8 @@ struct FontModifier: ViewModifier {
     let font: SunfishFont
 
     func body(content: Content) -> some View {
-        return content.font(Font.custom(font, size: font.size))
+        content
+            .font(Font.custom(font, size: font.size))
     }
 }
 
@@ -49,7 +51,8 @@ extension View {
     /// Text("Hello, World!")
     ///     .font(.sunfish(size: 30.0, weight: .regular))
     public func font(_ font: SunfishFont) -> some View {
-        self.modifier(FontModifier(font: font))
+        self
+            .modifier(FontModifier(font: font))
     }
 }
 
