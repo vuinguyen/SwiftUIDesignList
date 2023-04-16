@@ -22,7 +22,7 @@ let package = Package(
         .target(
             name: "SunfishDesign",
             dependencies: [],
-            resources: [.process("Resources/Fonts")]),
+            resources: [.process("Resources")]),
         .testTarget(
             name: "SunfishDesignTests",
             dependencies: ["SunfishDesign"]),
