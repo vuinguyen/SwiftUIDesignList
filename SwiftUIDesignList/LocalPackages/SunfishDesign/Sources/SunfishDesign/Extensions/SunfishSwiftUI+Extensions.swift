@@ -96,7 +96,7 @@ extension Shape {
 /// Use this modifier to fill in an InsettableShape with a ShapeStyle that could be a SunfishColor,
 /// and add a stroke border around that InsettableShape, with a ShapeStyle that could be a SunfishColor
 /// Sample Usage:
-/// Circle()
+/// Circle().inset(by: 20.0)    // create an Insettable Circle
 ///     .fill(.sunfishPink, strokeBorder: .sunfishBrown, lineWidth: 10.0)
 ///
 /// Reference:
