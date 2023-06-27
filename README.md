@@ -1,5 +1,5 @@
 # SwiftUIDesignList
-**SwiftUIDesignList** is a kitchen sink app built to demo usage of the **SunfishDesign** library, to apply custom fonts and colors to the app's SwiftUI views.
+**SwiftUIDesignList** is a kitchen sink app built to demo usage of the **SunfishDesign** library. The **SunfishDesign** library is a Swift package used to apply custom fonts and colors to the **SwiftUIDesignList** app's SwiftUI views.
 
 ## What is This Project
 
@@ -11,6 +11,8 @@ The project is comprised of two parts:
   - the iOS app that uses the SunfishDesign library
   - is a kitchen sink type app that applies the custom fonts and colors from the SunfishDesign library to its SwiftUI views
 
+I've given talks on this project at multiple conferences in 2023.
+Link to slides [here](https://www.slideshare.net/vui_nguyen/make-porting-custom-swiftui-elements-easy-with-swift-packages)
 ## Screenshots of the SwiftUIDesignList App
 #### Main Screen
 <img src="/screenshots/MainScreen.png" width="300"/>
